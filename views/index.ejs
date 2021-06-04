@@ -1,0 +1,158 @@
+<%- include('./partials/header.ejs') -%> <%- include('./partials/main_nav.ejs')
+-%>
+<!-- Main Content -->
+<main class="container">
+  <div class="col-10">
+    <div class="jumbotron">
+      <h2 class="h1"><%= title %></h2>
+    </div>
+  </div>
+  <!-- Additional Content -->
+  <% if (title == "Home"){ %>
+  <div class="row justify-content-md-center">
+    <div class="col-lg-15 col-md-8 col-sm-11 col-xs-10">
+      <h2 class="display-2 text-warning">Esen Yolcu</h2>
+      <hr class="my-4" />
+      <img
+        src="./Assets\images\welcome.jpg"
+        alt="Esen Yolcu"
+        width="720"
+        height="350"
+      />
+    </div>
+  </div>
+
+  <% }%> <% if (title == "About"){ %>
+  <div class="col-6">
+    <div class="alert alert-primary" role="alert">
+      <p class="h3 text-danger">Esen Yolcu - 301146395</p>
+    </div>
+    <img
+      src="./Assets\images\profile.jpg"
+      alt="Esen Yolcu"
+      width="171"
+      height="178"
+    />
+    <hr class="my-4" />
+    <p class="h5">
+      Please click here to see
+      <a href="./Assets\images\resume.pdf" target="_blank"
+        >my resume's PDF version</a
+      >.
+    </p>
+    <br />
+    <p class="h5">
+      Thank you visiting my portfolio. I'm Esen Yolcu.<br />
+      I am a student in the Software Engineering Technician program at
+      Centennial College. I am originally from Turkey and have a master degree
+      in Chemistry.
+      <br />
+      I worked as a Chemist for 5 years and enjoyed my job. <br />Software is a
+      new field for me, and I love software development and writing code.
+    </p>
+    <br />
+  </div>
+  <% }%> <% if (title == "Products"){ %>
+
+  <div class="col-11">
+    <div class="alert alert-primary" role="alert">
+      <p class="h5 text-danger">First Semester Projects - HTML and CSS</p>
+    </div>
+    <table class="table">
+      <tr>
+        <td>
+          <li class="h5">
+            <a
+              href="http://studentweb.cencol.ca/eyolcu/Assignment3/Assignment3.html"
+              target="_blank"
+              >HTML anc CSS based website</a
+            >
+          </li>
+        </td>
+        <td>
+          <img
+            src="./Assets\images\meta.jpg"
+            alt="Forex Market"
+            width="270"
+            height="255"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="col-11">
+    <div class="alert alert-primary" role="alert">
+      <p class="h5 text-danger">Second Semester Projects - JavaScript</p>
+    </div>
+    <table class="table">
+      <tr>
+        <td>
+          <li class="h5">
+            <a
+              href="http://studentweb.cencol.ca/eyolcu/Semester-2-A3/photos.html"
+              target="_blank"
+              >JavaScript based website</a
+            >
+          </li>
+        </td>
+        <td>
+          <img
+            src="./Assets\images\arshad.jpg"
+            target="_blank"
+            width="290"
+            height="255"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="col-11">
+    <div class="alert alert-primary" role="alert">
+      <p class="h5 text-danger">
+        Second Semester Projects - JavaScript and JQuerry
+      </p>
+    </div>
+    <table class="table">
+      <tr>
+        <td>
+          <li class="h5">
+            <a
+              href="http://studentweb.cencol.ca/eyolcu/Semester-2-A6/assignment6.html"
+              target="_blank"
+            >
+              JavaScript & JQuerry based website</a
+            >
+          </li>
+        </td>
+        <td>
+          <img src="./Assets\images\jq.png" width="290" height="255" />
+        </td>
+      </tr>
+    </table>
+  </div>
+  <% }%> <% if (title == "Services"){ %>
+
+  <div class="col-10">
+    <div class="alert alert-primary" role="alert">
+      <p class="h3 text-danger">Languages ​​and Software</p>
+    </div>
+    <img
+      src="./Assets\images\prog.jpg"
+      alt="Esen Yolcu"
+      width="290"
+      height="255"
+    />
+    <hr class="my-4" />
+    <li class="h5">I can develop webpages using HTML,CSS and JavaScript.</li>
+    <li class="h5">I am interested in new front-end technologies.</li>
+    <li class="h5">
+      I am confident in developing console applications with C#.
+    </li>
+    <br />
+  </div>
+  <% }%>
+</main>
+
+<%- include('./partials/bottom_nav.ejs') -%> <%-
+include('./partials/footer.ejs') -%>
